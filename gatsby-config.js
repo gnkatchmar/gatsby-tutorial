@@ -1,3 +1,18 @@
+// module.exports = {
+//   plugins: [`gatsby-plugin-typography`],
+// }
+
 module.exports = {
-  plugins: [`gatsby-plugin-typography`],
+  siteMetadata: {
+    title: `Pandas Eating Lots`,
+  },
+  plugins: [
+    `gatsby-plugin-emotion`,
+    {
+      resolve: `gatsby-plugin-typography`,
+      options: {
+        pathToConfigModule: `src/utils/typography`,
+      },
+    },
+  ],
 }
